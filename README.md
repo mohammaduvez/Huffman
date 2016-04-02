@@ -1,7 +1,7 @@
 # Huffman
 Simple huffman code implementation in java without using built-in data structure classes.
 
-# Huffman Algorithm
+## Huffman Algorithm
 
 Huffman invented a simple algorithm for constructing such trees given the set of characters and their frequencies. The corresponding code is called the Huffman code, and is shown to be the optimal prefix code. Let us assume that we have a set C of n characters and that each character c in C has the frequency f[c].
 The algorithm constructs the tree in a bottom-up way. It starts by creating a single-node tree for each character in C. At each step, it takes two trees with the smallest frequencies and merges them by making them children of a new root. This root is then labeled with the sum of the frequencies of its two children. This process is repeated |C|-1 times, after which we are left with only a single tree.
@@ -18,7 +18,7 @@ Huffman(C)
     Q.insert(z)
 done
 ```
-# Program Description
+## Program Description
 This program Encodes(compresses) a file using Huffman encoding. It implements the following data structures:
 * A TreeNode class to represent a node in the Huffman tree.
 * A sorted array to store elements of TreeNode class with the frequency of TreeNode as the key.
@@ -44,4 +44,4 @@ Use input.txt file to test the program.
 ## Compile Program:
 ``` javac MainClass.java Huffman.java TreeNode.java ```
 ## Run Program:
-``` java MainClass [inputfile] [outputfile] ``` 
+``` java huffman.MainClass [inputfile] [outputfile] ``` 
